@@ -1,0 +1,150 @@
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Vishal
+user.email=vishal.s.jadhav767@gmail.com
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo
+$ git init
+Initialized empty Git repository in D:/Vishal_git_repo/.git/
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ ls
+Sample.txt
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ ls -l
+total 1
+-rw-r--r-- 1 vishu 197609 47 Mar 14 19:20 Sample.txt
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ cd.git
+bash: cd.git: command not found
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ cd .git
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo/.git (GIT_DIR!)
+$ cd ..
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ ls
+Sample.txt
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git add sample.txt
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git add sample.txt
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git add Sample.txt
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Sample.txt
+
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git commit -m "adding for demo only"
+[master (root-commit) dcb94e4] adding for demo only
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Sample.txt
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git remote add origin https://github.com/VishalSJadhav/KHut.git
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/VishalSJadhav/KHut.git'
+
+vishu@LAPTOP-NUOM37H3 MINGW64 /d/Vishal_git_repo (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/VishalSJadhav/KHut.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
