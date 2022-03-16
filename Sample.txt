@@ -1,3 +1,5 @@
 We are in the first session of the Github topic
 
 Let's try modifying it
+
+Tutorial for pull command
